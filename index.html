@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Sanjona ❤️</title>
+
+<style>
+body {
+  background: #fff0f3;
+  font-family: Arial;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.box {
+  background: white;
+  width: 320px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px pink;
+}
+
+button {
+  font-size: 18px;
+  padding: 8px 18px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+#yes {
+  background: #ff4d6d;
+  color: white;
+}
+
+#no {
+  background: #adb5bd;
+  position: absolute;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+<h2>Sanjona 💖</h2>
+
+<p>Will you be my Valentine? 🌹</p>
+
+<button id="yes" onclick="yes()">Yes</button>
+<button id="no" onmouseover="bhagNo()">No</button>
+</div>
+
+<script>
+function yes() {
+  alert("Yayyyy! 💘 Ab tum meri Valentine ho Sanjona ❤️");
+}
+
+function bhagNo() {
+  var x = Math.random() * window.innerWidth * 0.7;
+  var y = Math.random() * window.innerHeight * 0.7;
+
+  document.getElementById("no").style.left = x + "px";
+  document.getElementById("no").style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
